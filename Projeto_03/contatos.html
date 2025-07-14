@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="author" content="Bani Diuli" />
+  <title>CURRÍCULO</title>
+  <link rel="shortcut icon" href="Imagens/contato.png" type="image/x-icon" />
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f1eaf8; /* lilás clarinho */
+      padding: 20px;
+      margin: 0;
+      color: #4b2e83; /* roxo escuro para texto */
+    }
+
+    header#menu {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .logo {
+      width: 120px;
+      height: auto;
+      border-radius: 50%;
+      border: 3px solid #7e57c2; /* lilás forte na borda */
+    }
+
+    nav {
+      margin-top: 15px;
+    }
+
+    .nick {
+      margin: 0 10px;
+      text-decoration: none;
+      color: #7e57c2; /* lilás */
+      font-weight: bold;
+      font-size: 1.1rem;
+      transition: color 0.3s ease;
+    }
+
+    .nick:hover {
+      color: #ffffff; /* lilás mais claro */
+      text-decoration: underline;
+    }
+
+    .b01 {
+      max-width: 800px;
+      margin: 30px auto;
+      background-color: #ede7f6; /* lilás bem clarinho */
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 8px rgba(126, 87, 194, 0.4);
+    }
+
+    form {
+      background-color: #fff;
+      padding: 30px;
+      max-width: 800px;
+      margin: 30px auto;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(126, 87, 194, 0.3);
+    }
+
+    fieldset {
+      border: none;
+      margin-bottom: 20px;
+    }
+
+    legend {
+      font-size: 1.3em;
+      margin-bottom: 10px;
+      font-weight: bold;
+      color: #4b2e83;
+    }
+
+    label {
+      display: block;
+      margin-top: 15px;
+      font-weight: bold;
+    }
+
+    input,
+    select,
+    textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border: 1px solid #b39ddb;
+      border-radius: 6px;
+      box-sizing: border-box;
+      font-size: 1rem;
+      color: #4b2e83;
+      background-color: #f3e5f5;
+      transition: border-color 0.3s ease;
+    }
+
+    input:focus,
+    select:focus,
+    textarea:focus {
+      border-color: #ffffff;
+      outline: none;
+      background-color: #300c64;
+    }
+
+    .button-group {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 25px;
+    }
+
+    input[type="submit"],
+    input[type="reset"] {
+      width: 48%;
+      padding: 12px;
+      font-size: 16px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-weight: bold;
+      color: white;
+      transition: background-color 0.3s ease;
+    }
+
+    input[type="submit"] {
+      background-color: #673ab7; /* roxo escuro */
+    }
+
+    input[type="submit"]:hover {
+      background-color: #512da8;
+    }
+
+    input[type="reset"] {
+      background-color: #9575cd; /* lilás médio */
+    }
+
+    input[type="reset"]:hover {
+      background-color: #7e57c2;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 40px;
+      padding: 20px;
+      font-size: 14px;
+      color: #4b2e83;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header id="menu">
+    <img class="logo" src="Imagens/perfil.png" alt="Imagem de perfil de Bani Diuli" />
+    <h1><i>PORTFÓLIO E CURRÍCULO</i></h1>
+    <h2>Bani Diuli Lins de Souza</h2>
+
+    <nav>
+      <a class="nick" href="index.html">❤︎ CURRÍCULO</a>
+      <a class="nick" href="portifolio.html">❤︎ PORTFÓLIO</a>
+      <a class="nick" href="contatos.html">❤︎ CONTATOS</a>
+      *ੈ✩‧₊˚
+    </nav>
+  </header>
+
+  <section class="b01">
+    <h3><i>Informações Pessoais:</i></h3>
+    <p>R. do Mestre n° 61, São Paulo - SP | <u>(11) 93353-8706</u> | <u>banidiuli@gmail.com</u> | Brasileira | Solteira
+    </p>
+  </section>
+
+  <main>
+    <form action="#" method="post">
+      <fieldset id="usuario">
+        <legend>Informações do Usuário</legend>
+
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" placeholder="Digite seu nome completo" required />
+
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required />
+
+        <label for="senha">Senha:</label>
+        <input type="password" id="senha" name="senha" required />
+
+        <label for="mensagem">Mensagem:</label>
+        <textarea id="mensagem" name="mensagem" rows="4" placeholder="Digite uma mensagem"></textarea>
+
+        <label for="genero">Gênero:</label>
+        <select id="genero" name="genero" required>
+          <option value="">Selecione</option>
+          <option value="masculino">Masculino</option>
+          <option value="feminino">Feminino</option>
+          <option value="outro">Outro</option>
+          <option value="nao_informar">Prefiro não informar</option>
+        </select>
+
+        <label for="nascimento">Data de Nascimento:</label>
+        <input type="date" id="nascimento" name="nascimento" required />
+      </fieldset>
+
+      <fieldset>
+        <legend>Endereço do Usuário</legend>
+
+        <label for="logradouro">Logradouro:</label>
+        <input type="text" id="logradouro" name="logradouro" required />
+
+        <label for="numero">Número:</label>
+        <input type="number" id="numero" name="numero" min="0" required />
+
+        <label for="estado">Estado:</label>
+        <select id="estado" name="estado" required>
+          <option value="">Selecione</option>
+          <option value="AC">Acre (AC)</option>
+          <option value="AL">Alagoas (AL)</option>
+          <option value="AP">Amapá (AP)</option>
+          <option value="AM">Amazonas (AM)</option>
+          <option value="BA">Bahia (BA)</option>
+          <option value="CE">Ceará (CE)</option>
+          <option value="DF">Distrito Federal (DF)</option>
+          <option value="ES">Espírito Santo (ES)</option>
+          <option value="GO">Goiás (GO)</option>
+          <option value="MA">Maranhão (MA)</option>
+          <option value="MT">Mato Grosso (MT)</option>
+          <option value="MS">Mato Grosso do Sul (MS)</option>
+          <option value="MG">Minas Gerais (MG)</option>
+          <option value="PA">Pará (PA)</option>
+          <option value="PB">Paraíba (PB)</option>
+          <option value="PR">Paraná (PR)</option>
+          <option value="PE">Pernambuco (PE)</option>
+          <option value="PI">Piauí (PI)</option>
+          <option value="RJ">Rio de Janeiro (RJ)</option>
+          <option value="RN">Rio Grande do Norte (RN)</option>
+          <option value="RS">Rio Grande do Sul (RS)</option>
+          <option value="RO">Rondônia (RO)</option>
+          <option value="RR">Roraima (RR)</option>
+          <option value="SC">Santa Catarina (SC)</option>
+          <option value="SP">São Paulo (SP)</option>
+          <option value="SE">Sergipe (SE)</option>
+          <option value="TO">Tocantins (TO)</option>
+        </select>
+      </fieldset>
+
+      <div class="button-group">
+        <input type="submit" value="Enviar" />
+        <input type="reset" value="Limpar" />
+      </div>
+    </form>
+  </main>
+
+  <footer>
+    <h4>Portfólio - 2025 Designer - Bani Diuli Lins de Souza</h4>
+  </footer>
+</body>
+
+</html>
+
